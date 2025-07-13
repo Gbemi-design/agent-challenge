@@ -1,16 +1,18 @@
 
-[Nosana Proof]
-<img src="images/NosanaProof1.png" width="500"/>
+![HealthSecure Agent Demo](images/NosanaProof1.png)
+*Figure 1: GitHealth AI agent running on nosana*
 
 
 GitHealth Agent - README Document
 =================================
 
 🔍 AGENT DESCRIPTION & PURPOSE
+=================================
 
 The GitHealth Agent is an AI-powered cybersecurity tool designed to enhance the security of open-source healthcare applications. Built using the Mastra framework, this agent scans GitHub repositories for known vulnerabilities (CVEs) in their dependencies by leveraging the OSV API.
 
 ⚙️ SETUP INSTRUCTIONS (LOCAL DEVELOPMENT)
+=================================
 
 1. Clone the repository:
    git clone https://github.com/Gbemi-design/agent-challenge.git

@@ -1,28 +1,32 @@
 {
-  "ops": [
-    {
-      "id": "agents",
-      "args": {
-        "gpu": true,
-        "image": "docker.io/yourusername/agent-challenge:latest",
-        "expose": [
-          {
-            "port": 8080
-          }
-        ],
-        "entrypoint": [
-          "/bin/sh"
-        ]
-      },
-      "type": "container/run"
-    }
-  ],
-  "meta": {
-    "trigger": "dashboard",
-    "system_requirements": {
-      "required_vram": 4
-    }
-  },
-  "type": "container",
-  "version": "0.1"
+"ops": [
+{
+"id": "agents",
+"args": {
+"gpu": true,
+"image": "docker.io/precious7020/agent-challenge:latest",
+"expose": [
+{
+"port": 8080
+}
+],
+"cmd": [
+"-c",
+"ollama serve & sleep 5 && ollama pull $MODEL_NAME_AT_ENDPOINT && pnpm run dev"
+],
+"entrypoint": [
+"/bin/sh"
+]
+},
+"type": "container/run"
+}
+],
+"meta": {
+"trigger": "dashboard",
+"system_requirements": {
+"required_vram": 4
+}
+},
+"type": "container",
+"version": "0.1"
 }

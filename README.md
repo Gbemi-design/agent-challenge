@@ -1,7 +1,8 @@
 
 ![HealthSecure Agent Demo](images/NosanaProof1.png)
 *Figure 1: GitHealth AI agent running on nosana*
-
+![HealthSecure Agent Demo](images/NosanaProof2.png)
+*Figure 2: GitHealth AI agent running on nosana*
 
 GitHealth Agent - README Document
 =================================
